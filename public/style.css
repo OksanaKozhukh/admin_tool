@@ -1,0 +1,89 @@
+body {
+  position: relative;
+  font-size: 14px;
+  background: linear-gradient(to left, #cfe9d8, #37ddc1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #197a3a;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px;
+  border: 5px solid #197a3a;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 5px gray;
+}
+
+.modal {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-body {
+  position: relative;
+  height: 500px;
+  width: 500px;
+}
+
+.modal-body .modal-close {
+  right: 0;
+  top: 0;
+}
+
+.modal-body a {
+  position: absolute;
+  text-decoration: none;
+  color: black;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: lighter;
+  background: #bec8c8;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.modal-body .button-modal:hover {
+  transform: scale(1.2);
+}
+
+.button-modal:first-of-type {
+  margin-right: 20px;
+}
+
+.modal img {
+  border: 5px solid #fff;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
