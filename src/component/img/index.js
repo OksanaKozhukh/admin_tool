@@ -7,14 +7,14 @@ class Image extends Component {
     const { fetching, onRequestDog, error } = this.props;
 
     return (
-      <div className='image'>
+      <div>
         {fetching ? (
           <StyledButton type='dashed' disabled>
             Fetching...
           </StyledButton>
         ) : (
           <StyledButton type='dashed' onClick={onRequestDog}>
-            Request a Dog
+            Load an image
           </StyledButton>
         )}
         {error && <p style={{ color: 'red' }}>Something went wrong!</p>}

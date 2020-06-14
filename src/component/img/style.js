@@ -7,6 +7,7 @@ const StyledButton = styled(Button)`
   border-radius: 10px;
   height: 40px;
   font-weight: bold;
+  color: #197a3a;
 `;
 
 export { StyledButton };

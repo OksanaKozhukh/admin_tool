@@ -27,7 +27,7 @@ class GalleryModal extends Component {
       </Button>
     );
     notification.open({
-      description: 'Please, confirm the image deleting',
+      description: 'Are you sure you want to remove this image?',
       btn,
       key,
       onClose: this.close,
